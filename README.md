@@ -20,7 +20,7 @@ Add this to `initContainers` of your `Deployment` or `StatefulSet`:
 spec:
   initContainers:
   - name: prometheus-jmx-exporter
-    image: marcosrossem/prometheus-jmx-exporter-kubernetes:0.1.0
+    image: marcosrossem/prometheus-jmx-exporter-kubernetes:latest
     env:
     - name: SHARED_VOLUME_PATH
       value: /shared-volume
